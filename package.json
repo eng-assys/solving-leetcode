@@ -1,0 +1,26 @@
+{
+  "name": "solving-leetcode",
+  "version": "1.0.0",
+  "description": "Solutions to LeetCode problems using TypeScript",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --testMatch='<rootDir>/src/**/*.test.ts'",
+    "test:watch": "jest --testMatch='<rootDir>/src/**/*.test.ts' --watchAll"
+  },
+  "keywords": [
+    "leetcode",
+    "typescript",
+    "jest",
+    "algorithms",
+    "data-structures"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.5",
+    "typescript": "^5.5.3"
+  }
+}
