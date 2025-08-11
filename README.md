@@ -6,6 +6,7 @@ This project is a collection of solutions for algorithms and data structure prob
 ## 📁 Project Structure
 Solutions are organized into folders by category. Within each category, there are subfolders for each problem, named for easy identification.
 
+```plaintext
 .
 ├── src/
 │   ├── strings/
@@ -21,6 +22,7 @@ Solutions are organized into folders by category. Within each category, there ar
 ├── jest.config.js
 ├── package.json
 └── tsconfig.json
+```
 
 ## 🛠️ Technologies Used
 * TypeScript: A typed programming language for implementing the solutions.
