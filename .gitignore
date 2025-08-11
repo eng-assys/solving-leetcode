@@ -1,0 +1,21 @@
+# Ignore Node.js dependencies
+node_modules/
+
+# Ignore TypeScript build output
+# (the 'dist' folder created by the compiler)
+dist/
+
+# Ignore logs and debug files
+npm-debug.log
+.jest-cache/
+.eslintcache
+
+# Ignore editor cache files (if applicable)
+.vscode/
+
+# Ignore temporary or system files
+.DS_Store
+*.log
+
+# Ignore any other build or temporary artifacts
+build/
