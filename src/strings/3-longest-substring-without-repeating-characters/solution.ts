@@ -1,19 +1,17 @@
 export function lengthOfLongestSubstring(s: string): number {
     if(s.length === 0) return 0;
 
-    let substring = [s[0]];
-    let maxLength = 1;
-    let i = 1;
+    let substring = [];
+    let maxLength = 0;
+    let i = 0;
 
     while(i < s.length){
         const charInSubstring = substring.indexOf(s[i]);
-        if(charInSubstring === -1)
-            substring.push(s[i]);
-        else
-            substring = substring.slice(charInSubstring);
+        substring.push(s[i]);
+        if(charInSubstring !== -1)
+            substring = substring.slice(charInSubstring+1);
         
         maxLength = Math.max(maxLength, substring.length);
-
         i += 1;
     }
     

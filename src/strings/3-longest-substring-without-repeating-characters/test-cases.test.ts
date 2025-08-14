@@ -16,4 +16,9 @@ describe('3. Longest Substring Without Repeating Characters', () => {
     const input = "pwwkew";
     expect(lengthOfLongestSubstring(input)).toBe(3);
   });
+
+  test('should return 3 to string "aabaab!bb"', () => {
+    const input = "aabaab!bb";
+    expect(lengthOfLongestSubstring(input)).toBe(3);
+  });
 });
