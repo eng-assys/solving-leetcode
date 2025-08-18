@@ -1,6 +1,6 @@
 import { minWindow } from './solution';
 
-describe('20. Valid Parentheses', () => {
+describe('76. Minimum Window Substring', () => {
 
   test('should return "BANC" for s = "ADOBECODEBANC", t = "ABC"', () => {
     const s = "ADOBECODEBANC";
@@ -14,7 +14,7 @@ describe('20. Valid Parentheses', () => {
     expect(minWindow(s, t)).toBe("a");
   });
 
-  test('should return "BANC" for s = "a", t = "aa"', () => {
+  test('should return "" for s = "a", t = "aa"', () => {
     const s = "a";
     const t = "aa";
     expect(minWindow(s, t)).toBe("");
