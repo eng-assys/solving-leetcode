@@ -1,7 +1,9 @@
-import { minWindow } from './solution';
+import { minWindow } from './solution'
+import minSubstring = require('../data/min-substring');
+import sString = require('../data/s-string');
+import tString = require('../data/t-string');
 
-describe('76. Minimum Window Substring', () => {
-
+describe('76. Minimum Window Substring - Heavy Test Case', () => {
   test('should return "BANC" for s = "ADOBECODEBANC", t = "ABC"', () => {
     const s = "ADOBECODEBANC";
     const t = "ABC";
@@ -18,5 +20,9 @@ describe('76. Minimum Window Substring', () => {
     const s = "a";
     const t = "aa";
     expect(minWindow(s, t)).toBe("");
+  });
+
+  test('should return enormous minSubstring for enormous s and t', () => {
+    expect(minWindow(sString.s, tString.t)).toBe(minSubstring.minSubstring);
   });
 });
