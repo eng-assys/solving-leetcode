@@ -1,7 +1,7 @@
 import { minWindow } from './solution'
-import minSubstring = require('../data/min-substring');
-import sString = require('../data/s-string');
-import tString = require('../data/t-string');
+import minSubstring = require('./data/min-substring');
+import sString = require('./data/s-string');
+import tString = require('./data/t-string');
 
 describe('76. Minimum Window Substring - Heavy Test Case', () => {
   test('should return "BANC" for s = "ADOBECODEBANC", t = "ABC"', () => {
